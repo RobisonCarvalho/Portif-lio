@@ -1,17 +1,15 @@
-/**
-* Template Name: MyResume
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+@font-face {
+  font-family: Consolas;
+  src: url(../fonts/consola.ttf);
+}
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+*{
+  font-family: Consolas !important;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
+  font-family: "Consolas", sans-serif;
+  color: #505050;
 }
 
 a {
@@ -30,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: Consolas;
 }
 
 /*--------------------------------------------------------------
@@ -287,7 +285,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -397,6 +395,31 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding-right: 10px;
+  }
+
+  .two {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding: 0 10px;
+  }
+
+  .two img {
+    width: 460px;
+  }
+  
 
 /*--------------------------------------------------------------
 # About
@@ -1002,6 +1025,12 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0563bb;
+}
+
+@media (max-width: 470px) {
+  .two img {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
