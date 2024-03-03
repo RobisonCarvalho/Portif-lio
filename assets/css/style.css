@@ -398,28 +398,12 @@ section {
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   }
-
-  .one {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    padding-right: 10px;
-  }
-
-  .two {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    padding: 0 10px;
-  }
-
-  .two img {
-    width: 460px;
-  }
-  
+ 
 
 /*--------------------------------------------------------------
 # About
